@@ -1,8 +1,14 @@
 import React from 'react';
-import './App.css';
+import GlobalStyles from './styles/GlobalStyles';
+import NewsList from './components/NewsList';
 
 function App() {
-	return <div className='App'></div>;
+	return (
+		<>
+			<GlobalStyles />
+			<NewsList />
+		</>
+	);
 }
 
 export default App;
