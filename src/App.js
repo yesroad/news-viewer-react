@@ -1,14 +1,13 @@
 import React from 'react';
-import GlobalStyles from './styles/GlobalStyles';
-import NewsList from './components/NewsList';
-import Categories from './components/Categories';
+import GlobalStyles from './styles/GlobalStyles.js';
+import { Route } from 'react-router-dom';
+import NewsPage from './pages/NewsPage';
 
 function App() {
 	return (
 		<>
 			<GlobalStyles />
-			<Categories />
-			<NewsList />
+			<Route path='/:category?' component={NewsPage} />;
 		</>
 	);
 }
